@@ -1,37 +1,45 @@
-#clockContainer{  
-    position: relative;
-    margin: auto;
+#clockContainer{
+    background-color: red;
     height: 40vw;
-    width: 40vw; 
-    background: url(clock.png) no-repeat;
+    width: 40vw;
+    margin: auto;
+    background: url(clock.jpg) no-repeat;
+    /* border: 2px solid red; */
     background-size: 100%;
+    position: relative;
 }
 
-#hour, #minute, #second{
+#hours, #minutes, #seconds{
+    /* background: black; */
     position: absolute;
+    border-radius: 10px;
+}
+
+#hours{
+    top: 14.7vw;
+    left: 19.5vw;
     background: black;
-    border-radius: 10px; 
+    height: 8vw;
+    width: 1vw;
     transform-origin: bottom;
+    /* display: none; */
 }
-#hour{
-    width: 1.8%;
-    height: 25%;
-    top: 25%;
-    left: 48.85%;
-    opacity: 0.8;  
+#minutes{
+    top: 12.7vw;
+    left: 19.6vw;
+    background: red;
+    height: 10vw;
+    transform-origin: bottom;
+    width: 0.8vw;
+    /* display: none; */
 }
-#minute{
-    width: 1.6%;
-    height: 30%;
-    top: 19%;
-    left: 48.9%;
-    opacity: 0.8;  
-}
-#second{
-    width: 1%;
-    height: 40%;
-    top: 9%;
-    left: 49.25%;
-    opacity: 0.8; 
-    
+
+#seconds{
+    top: 10.7vw;
+    left: 19.6vw;
+    background: blue;
+    height: 12vw;
+    width: 0.6vw;
+    transform-origin: bottom;
+    /* display: none; */
 }

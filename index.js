@@ -1,13 +1,20 @@
-setInterval(() => {
-    d = new Date();
-    htime = d.getHours();
-    mtime = d.getMinutes();
-    stime = d.getSeconds();
-    hrotation = 30*htime + mtime/2;
-    mrotation = 6*mtime;
-    srotation = 6*stime;
+//For checking whether js file is working or not
+console.log("hello world");
 
-    hour.style.transform = `rotate(${hrotation}deg)`;
-    minute.style.transform = `rotate(${mrotation}deg)`;
-    second.style.transform = `rotate(${srotation}deg)`;
+//Initialising variables of dom
+let hours = document.getElementById('hours');
+let minutes = document.getElementById('minutes');
+let seconds = document.getElementById('seconds');
+
+setInterval(() => {
+    let d = new Date();
+    let htime = d.getHours();
+    let mtime = d.getMinutes();
+    let stime = d.getSeconds();
+    let hrotation = 30*htime+ mtime/2;
+    let mrotation = 6*mtime;
+    let srotation = 6*stime;
+    hours.style.transform = `rotate(${hrotation}deg)`;
+    minutes.style.transform = `rotate(${mrotation}deg)`;
+    seconds.style.transform = `rotate(${srotation}deg)`;
 }, 1000);
